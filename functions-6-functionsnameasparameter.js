@@ -6,15 +6,22 @@ function main() {
 
     console.log("Welcome to my app!");
 
-    sayHello(sayGoodbye);
+    sayHelloThen(sayHowdy);
+    sayHelloThen(sayGoodbye);
 
 }
 
-function sayHello(nextThingToDo) {
+function sayHelloThen(nextThingToDo) {
 
     console.log("Hello");
 
     nextThingToDo();
+    
+}
+
+function sayHowdy() {
+
+    console.log("Howdy");
     
 }
 
